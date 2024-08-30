@@ -146,7 +146,7 @@ function App() {
                             : row.id === 3
                             ? randomResult.prize2.join(", ")
                             : row.id === 4
-                            ? randomResult.last2Digits
+                            ? String(randomResult.last2Digits).padStart(2, "0")
                             : "")}
                       </TableCell>
                     </TableRow>
